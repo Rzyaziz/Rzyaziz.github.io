@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+
+body{
+    height: 100vh;
+    background-color: whitesmoke;
+    
+    background-size: cover;
+
+}
+/* START NAVIGATION */
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color:black;
+
+}
+
+a:hover{
+    color:black;
+    padding: 0.4rem 0.9rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    transition: 0.5s;
+    background-color:gainsboro;
+
+}
+
+header{
+    position: relative;
+    padding: 0.2rem;
+}
+
+
+.nav{
+    width: 100%;
+    height: 90px;
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color:transparent;
+    color: black;
+    transition: 0.5s;
+
+}
+
+.nav .logo{
+    border: 40px;
+
+}
+.nav .links{
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+    transition: 0.5s;
+        
+}
+.nav .container .search_box{
+    align-items: center;
+    background-color:gainsboro;
+    height: 55px;
+    width: 800px;
+    display: flex;
+    padding: 3px 5px;
+    border-radius: 40px;
+    transition: 0.5s;
+}
+
+.nav .container .search_box .search_icon{
+    color:gray;
+    cursor: pointer;
+    left: 76%;
+    position:absolute;
+    font-size: 26px;
+}
+
+.nav .container .search_box .search_input .input{
+    background: transparent;
+    border: none;
+    background-color:gainsboro;
+    height: 55px;
+    width: 800px;
+    display: flex;
+    padding: 3px 5px;
+    border-radius: 40px;
+    transition: 0.5s;
+    
+
+}
+.nav .container .search_box .search_input .input:hover{
+    background: transparent;
+    border: none;
+    background-color:gainsboro;
+    height: 55px;
+    width: 810px;
+    display: flex;
+    padding: 3px 5px;
+    border-radius: 40px;
+    transition: 0.5s;
+    
+
+}
+
+.nav .add{
+    font-size:30px;
+    cursor: pointer;
+    display: flex;
+    transition: 0.5s;
+}
+
+.add:hover{
+    border-radius: 50%;
+    padding: 0.4rem;
+    background-color: gainsboro;
+    align-items: center;
+    transition: 0.5s;  
+     
+
+}
+
+.nav .notif{
+    display: flex;
+    cursor: pointer;
+    font-size :30px;
+    transition: 0.5s;
+    
+}
+.notif:hover{
+    
+    border-radius: 50%;
+    padding: 0.4rem;
+    background-color: gainsboro;
+    align-items: center;
+    transition: 0.5s;   
+
+}
+
+.nav .profile .profileteam{
+    cursor: pointer;
+    display: flex;
+    font-size :31px;
+    transition: 0.5s;
+}
+.profile:hover{
+    
+    border-radius: 50%;
+    padding: 0rem;
+    background-color: gainsboro;
+    align-items: center;
+    transition: 0.5s; 
+
+}
+
+.nav .button{
+    font-size:30px;
+    cursor: pointer;
+    display: flex;
+    transition: 0.5s;
+    
+}
+.button:hover{
+    background-color: gainsboro;   
+    border-radius: 15px;
+    padding: 0.4rem;
+
+    align-items: center;
+    transition: 0.5s; 
+}
+.active{    
+    padding: 0.4rem 0.9rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    transition: 0.5s;
+    background-color: gainsboro;
+}
+/* START CARD */
+
+.container_card{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    left: 5%;
+    
+    
+}
+   
+.card {
+    margin:10px;
+    padding: 0;
+    border-radius: 15px;
+    width: 530px;
+    height: 292px;
+    background-color: gray;
+    display:inline-block;
+    margin-left: 90px;
+    margin-top:30px;
+    margin-right: 40px;
+    
+    
+}
+
+.card span{
+   position:relative;
+   color: white;
+   top: -15%;
+   left: 5%;
+   position:relative;
+   font-size: larger;
+   
+}
+.container_card .card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    display:flex;
+    
+}
+

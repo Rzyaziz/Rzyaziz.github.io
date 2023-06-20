@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+* {
+  margin: 0;
+  padding : 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  height : 100vh ;
+  width : 100%;
+  background-size: cover;
+  background-position: center;
+  background-image: url(wisata.jpg)
+}
+.custom-button {
+  position: fixed;
+  font-size: 16px;
+  top: 2%;
+  left : 39%;
+  border : none;
+  background: transparent;
+  padding: 0;
+}
+.custom-button a{
+  text-decoration: none;
+}
+.custom-button i{
+  background : none;
+  border: none;
+  color : white;
+}
+
+/*Form*/
+.form_container{
+  max-width: 350px;
+  width: 100%;
+  padding-top: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  position : relative;
+  top : 50%;
+  left : 50%;
+  transform: translate(-50%, -50%) scale(0.84);
+  transition : all 0.4s ease-out;
+  text-align: center;
+}
+.logo_brand {
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  margin-bottom : 10px;
+}
+
+.logo_brand img {
+  display: inline-block;
+  width: 90px; 
+  height: auto;
+  
+}
+.form_container h2{
+  font-size:30px ;
+  color : #0375B4;
+  margin : 10px auto;
+  display: inline-block;
+}
+.form_container h3{
+    font-size: 30px;
+    color : #007849;
+    margin : 10px auto;
+    display: inline-block;
+  }
+.input_box{
+  position: relative;
+  margin-top: 30px;
+  width : 100%;
+  height: 25px;
+  margin-right: 10 px;
+  flex : 2;
+  display : flex;
+  gap : 20px;
+}
+.input_box input{
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 10px;
+  color: #333;
+  transition: all 0.2 ease;
+  border-bottom: 1.5px solid #aaaaaa ;
+}
+.input_box input:focus{
+border-color : #778899
+}
+.option_field{
+  margin-top: 14px;
+  display : flex;
+  align-items : center;
+  justify-content: space-between;
+}
+.form_container a{
+  color: #707070;
+  font-size: 12px;
+}
+.form_container a:hover{
+  text-decoration: underline;
+}
+.button {
+  display: inline-block;
+  padding: 10px 0;
+  background-color: #FFCE00;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  width : 100%;
+  margin-top: 20px;
+  border-color: #FFCE00 ;
+}
+
+.button:hover {
+  background-color: #FFCE00;
+}
+
+.button:active {
+  background-color: #FFCE00;
+}
+.form_container button{
+  background: #FFCE00;
+  margin-top: 25px;
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 10px;
+  border-color : #FFCE00;
+}
+.button span{
+  font-size: 15px;
+  color :#262228;
+}

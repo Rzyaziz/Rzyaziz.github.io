@@ -1,0 +1,59 @@
+.main_container{
+    width:1000px;
+    height: 300px;
+    margin 1;  
+}
+.header {
+    width: 100px;
+    height: 100px;
+    background: green;
+}
+.nav {
+    float: right;
+}
+ul li {
+    float: left;
+    margin-top: 1px;
+}
+ul li a {
+    margin-right: 10px;
+    text-decoration: none;
+}
+.logo {
+    float: right;
+    margin-right: 10px;
+}
+.logo img {
+    width: 83px;
+    height: 83px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.banner_container {
+    clear: both;
+}
+.banner_container img {
+    width: 1000px;
+}
+.left_content {
+    float: left;
+    width: 800px;
+}
+.right_content {
+    float: right;
+    width: 200px;
+}
+.article_1 {
+    padding: 20px;
+}
+.sidebar_container {
+    width: 200px;
+}
+.footer {
+    clear: both;
+    height: 10px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+

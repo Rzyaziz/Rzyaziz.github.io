@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NusanTour</title>
+        <link rel="icon" type="image/x-icon" href="logo.png">
+        <link><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="home.css">
+
+    </head>
+    <body>
+        <div class="nav">
+            <div class="logo"><image src="logo.png" alt="logo" width="50" height="50"></image></div>
+            <ul class="links">
+                <li><a href="Home.html" class="active">Home</a></li>
+                <li><a href="Explore.html"class="actionbutton">Explore</a></li>
+                <li><a href="Save.html"class="actionbutton">Save</a></li>
+            </ul>
+            <div class="container">
+                <div class="search_box">
+                    <div class="search_input">
+                        <input type="text" class="input" id="inputBar" onkeyup="search_fitur()" placeholder="   Kemana nichh..."></input>
+                    </div>
+                    <div class="search_icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>                                  
+            </div>          
+            <div class="add">
+                <i class="fa-solid fa-circle-plus"></i>
+            </div>                
+            <div class="notif">
+                <i class="fa-solid fa-bell"></i>
+            </div>
+            <div class="profile">
+                <a href="team.html" class="profileteam" >  
+                    <i class="fa-sharp fa-solid fa-circle-user"></i>
+                </a>             
+                                
+            </div>
+            <div class="button">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="button_filter">
+            <button class="filter_active active" data-filter="all">
+                <i class="fa-solid fa-location-dot"></i> All
+            </button>
+            <button class="filter-item nature" data-filter="nature">
+                <i class="fa-solid fa-mountain-sun"></i> Nature
+            </button>
+            <button class="filter-item city" data-filter="city">
+                <i class="fa-sharp fa-solid fa-city"></i> City
+            </button>
+            <button class="filter-item food" data-filter="food">
+                <i class="fa-solid fa-bowl-food"></i> Food & Drink
+            </button>
+            <button class="filter-item culture" data-filter="culture">
+                <i class="fa-solid fa-house"></i> Culture
+            </button>     
+                          
+            
+        </div>
+
+        <div class="container_card" id="list-item">
+            <img class="background_image">
+            <div class="card_small gambar nature">                    
+                <img src="https://awsimages.detik.net.id/community/media/visual/2022/04/30/tipang_169.jpeg?w=1200">
+                <p class="card_title">Danau Toba</p>                                                                
+            </div>
+            <div class="card_medium gambar nature">
+                <img src="https://www.pegipegi.com/travel/wp-content/uploads/2015/07/danau-maninjau.jpg">
+                <p class="card_title">Danau Maninjau</p>
+            </div>
+            <div class="card_large gambar culture">
+                <img src="https://i.pinimg.com/236x/72/03/4c/72034c2474f83d06af3addcf1cfa3b84.jpg">
+                <p class="card_title">Borobudur</p>
+            </div>
+
+            <div class="card_medium gambar city">
+                <img src="https://www.bfi.co.id/Blog/Blog%20New/Tempat%20wisata/Tempat%20Wisata%20di%20Indonesia%20Bali.jpg">
+                <p class="card_title">Bali</p>
+            </div>
+            <div class="card_small gambar nature">
+                <img src="https://www.bfi.co.id/Blog/Blog%20New/Tempat%20wisata/Tempat%20wisata%20di%20Indonesia%20Komodo.jpg">
+                <p class="card_title">Pulau Komodo</p>
+            </div>
+            <div class="card_large gambar nature">
+                <img src="https://i.pinimg.com/236x/f2/fa/5e/f2fa5e888373b70bce905f9430c54c78.jpg">
+                <p class="card_title">Merapi</p>
+            </div>
+            <div class="card_medium gambar nature">
+                <img src="https://i.pinimg.com/564x/71/a7/11/71a7111d4f120330569ae7cf0438bbd7.jpg">
+                <p class="card_title">Pantai Ora</p>
+            </div>
+            <div class="card_small gambar nature">
+                <img src="https://www.bfi.co.id/Blog/Blog%20New/Tempat%20wisata/Bunaken.jpg">
+                <p class="card_title">Bunaken</p>
+            </div>
+            <div class="card_medium gambar nature">
+                <img src="https://www.bfi.co.id/Blog/Blog%20New/Tempat%20wisata/Tempat%20wisata%20di%20Indonesia%20Gili%20Trawangan.jpg">
+                <p class="card_title">Gili Trawangan</p>
+            </div>
+            <div class="card_small gambar food">
+                <img src="https://www.indonesia.travel/content/dam/indtravelrevamp/en/trip-ideas/the-ultimate-guide-to-must-try-indonesian-food/1.jpg">
+                <p class="card_title">Rendang</p>
+            </div>
+            <div class="card_medium gambar food">
+                <img src="https://www.indonesia.travel/content/dam/indtravelrevamp/en/trip-ideas/the-ultimate-guide-to-must-try-indonesian-food/2.jpg">
+                <p class="card_title">Pempek</p>
+            </div>
+            <div class="card_large gambar city">
+                <img src="https://i.pinimg.com/564x/e5/16/9f/e5169fa26460354a6148618c51e1217a.jpg">
+                <p class="card_title">Monas</p>
+            </div>
+            <div class="card_medium gambar nature">
+                <img src="https://i.pinimg.com/564x/7f/4b/b6/7f4bb61b4f5de48f331cc9589a4810ee.jpg">
+                <p class="card_title">Puncak Jayawijaya</p>
+            </div>
+            <div class="card_small gambar food">
+                <img src="https://www.indonesia.travel/content/dam/indtravelrevamp/en/trip-ideas/the-ultimate-guide-to-must-try-indonesian-food/5.jpg">
+                <p class="card_title">Gudeg</p>
+            </div>
+            <div class="card_medium gambar nature">
+                <img src="https://i.pinimg.com/564x/76/99/55/7699554cbf226d47d87227743a815409.jpg">
+                <p class="card_title">Air Terjun Matajitu</p>
+            </div>
+            <div class="card_large gambar culture">
+                <img src="https://i.pinimg.com/564x/3e/8e/4d/3e8e4df0b5990ca5544cee68b36c8261.jpg">
+                <p class="card_title">Rumah Gadang</p>
+            </div>
+            <div class="card_medium gambar nature">
+                <img src="https://cdn.idntimes.com/content-images/post/20171128/mount-bromo-41458-990x742-264ad79563fd9b9bdaedb11f8041e24f.jpg">
+                <p class="card_title">Bromo</p>
+            </div>
+            <div class="card_large gambar nature">
+                <img src="https://i.pinimg.com/564x/c6/c6/b9/c6c6b9a98ff439e4e8b3e448749743e1.jpg">
+                <p class="card_title">Labuan Bajo</p>
+            </div>
+            <div class="card_medium gambar nature">
+                <img src="https://cdn.idntimes.com/content-images/post/20171128/gunung5-873351887263c5c036108645956bff55.jpg">
+                <p class="card_title">Ijen</p>
+            </div>
+            <div class="card_small gambar city">
+                <img src="https://i.pinimg.com/564x/c8/2e/6c/c82e6c9ce4d1def1688799f1c582af75.jpg">
+                <p class="card_title">Bandung</p>
+            </div>
+            <div class="card_large gambar culture">
+                <img src="https://i.pinimg.com/564x/6b/46/00/6b4600f49b7ac9fd9164e3a3121c73c1.jpg">
+                <p class="card_title">Reog Ponorogo</p>
+            </div>
+            <div class="card_medium gambar food">
+                <img src="https://www.indonesia.travel/content/dam/indtravelrevamp/en/trip-ideas/the-ultimate-guide-to-must-try-indonesian-food/bakso.jpg">
+                <p class="card_title">Bakso</p>
+            </div>
+            <div class="card_small gambar culture">
+                <img src="https://i.pinimg.com/564x/56/5d/d3/565dd39fd094f9e9e9db2cdb02119903.jpg">
+                <p class="card_title">Masjid Baiturrahman</p>
+            </div>
+            <div class="card_medium gambar city">
+                <img src="https://inisumedang.com/wp-content/uploads/2022/03/IMG-20220328-WA0097.jpg">
+                <p class="card_title">Bukittinggi</p>
+            </div>
+            <div class="card_small gambar food">
+                <img src="https://www.indonesia.travel/content/dam/indtravelrevamp/en/trip-ideas/the-ultimate-guide-to-must-try-indonesian-food/10.jpg">
+                <p class="card_title">Sate Lilit</p>
+            </div>
+            <div class="card_medium gambar food">
+                <img src="https://www.indonesia.travel/content/dam/indtravelrevamp/en/trip-ideas/the-ultimate-guide-to-must-try-indonesian-food/8.jpg">
+                <p class="card_title">Rawon</p>
+            </div>
+            <div class="card_large gambar culture">
+                <img src="https://i.pinimg.com/236x/3f/ca/51/3fca510ce682a549ca1db4416589b32c.jpg">
+                <p class="card_title">Tari Kecak</p>
+            </div>
+            <div class="card_medium gambar nature">
+                <img src="https://cdn.idntimes.com/content-images/post/20171128/gunung3-86f75c180e1d30e1eacd35004050be9e.jpg">
+                <p class="card_title">Rinjani</p>
+            </div>
+            <div class="card_small gambar culture">
+                <img src="https://i.pinimg.com/564x/a5/dc/76/a5dc76313de8f68ab4e67e0966b14bbe.jpg">
+                <p class="card_title">Mandalika</p>
+            </div>
+            <div class="card_medium gambar food">
+                <img src="https://i.pinimg.com/564x/21/ee/5a/21ee5aefc167598587958a6a29f4f197.jpg">
+                <p class="card_title">Onde-Onde</p>
+            </div>
+            <div class="card_large gambar nature">
+                <img src="https://i.pinimg.com/564x/77/28/6b/77286bc49e98c55302bf652e4cfac69b.jpg">
+                <p class="card_title">Tabuik</p>
+            </div>
+            <div class="card_small gambar food">
+                <img src="https://cdn.idntimes.com/content-images/post/20160718/3-f40f66dc16621630383e9918d5a52eff.jpg">
+                <p class="card_title">Tempoyak Ikan Patin</p>
+            </div>
+            <div class="card_medium gambar food">
+                <img src="https://cdn.idntimes.com/content-images/post/20160718/11-3b635418914db104c51d8d3deca425e2.jpg">
+                <p class="card_title">Lumpia</p>
+            </div>
+            <div class="card_large gambar culture">
+                <img src="https://i.pinimg.com/564x/01/41/37/014137fb38679f1a8c5da34a8d1b40ca.jpg">
+                <p class="card_title">Tari Topeng</p>
+            </div>
+            <div class="card_medium gambar city">
+                <img src="https://i.pinimg.com/564x/b5/dd/7d/b5dd7da8a6e7b8c22469b7e4e022fcf5.jpg">
+                <p class="card_title">Surabaya</p>
+            </div>
+            <div class="card_small gambar culture">
+                <img src="https://i.pinimg.com/564x/4a/dd/ef/4addef7693e082ef6bc857521bdb90fd.jpg">
+                <p class="card_title">Aceh</p>
+            </div>
+            <div class="card_medium gambar food">
+                <img src="https://cdn.idntimes.com/content-images/post/20160718/7-3cbe0692bf39410ad0a25a4fd0cdb6df.jpg">
+                <p class="card_title">Nasi Padang</p>
+            </div>
+            <div class="card_large gambar city">
+                <img src="https://i.pinimg.com/564x/89/3e/03/893e039fc847f870b412475f6b6357d1.jpg">
+                <p class="card_title">Malang</p>
+            </div>
+            <div class="card_small gambar culture">
+                <img src="https://www.dailysia.com/wp-content/uploads/2019/12/Makam-Raja-Tallo.jpg">
+                <p class="card_title">Makan Raja Tallo</p>
+            </div>
+            <div class="card_medium gambar culture">
+                <img src="https://www.dailysia.com/wp-content/uploads/2019/12/Fort-Rotterdam.jpg">
+                <p class="card_title">Fort Rotterdam</p>
+            </div>
+            <div class="card_large gambar culture">
+                <img src="https://www.dailysia.com/wp-content/uploads/2019/12/Masjid-99-kubah.jpg">
+                <p class="card_title">Masjid 99 Kubah</p>
+            </div>
+            <div class="card_medium gambar culture">
+                <img src="https://www.dailysia.com/wp-content/uploads/2019/12/Vihara-Girinaga.jpg">
+                <p class="card_title">Vihara Girinaga</p>
+            </div>
+            <div class="card_large gambar culture">
+                <img src="https://i.pinimg.com/564x/1a/88/ca/1a88ca98ae8b4d7c24a33743ea11716b.jpg">
+                <p class="card_title">Rumah Tongkonan</p>
+            </div>
+            <div class="card_medium gambar culture">
+                <img src="https://www.dailysia.com/wp-content/uploads/2019/12/Pelabuhan-Paotere.jpg">
+                <p class="card_title">Kapal Pinisi</p>
+            </div>
+            <div class="card_small gambar culture">
+                <img src="https://www.azwisata.com/wp-content/uploads/2014/12/Tempat-Wisata-di-Padang-Museum-Adityawarman.jpg">
+                <p class="card_title">Museum Aditiyawarman</p>
+            </div>
+            <div class="card_large gambar culture">
+                <img src="https://i.pinimg.com/564x/78/28/49/782849469a7faa82a27b364149972c59.jpg">
+                <p class="card_title">Candi Prambanan</p>
+            </div>
+            <div class="card_medium gambar culture">
+                <img src="https://i.pinimg.com/564x/34/69/21/34692145492ff7916b43852d5422ac58.jpg">
+                <p class="card_title">Candi Gedong Songo</p>
+            </div>
+            <div class="card_small gambar culture">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Honai_House_Papua.jpg">
+                <p class="card_title">Rumah Honai</p>
+            </div>
+            <div class="card_medium gambar nature">
+                <img src="https://i.pinimg.com/564x/6e/5c/43/6e5c43ba7e981198ab9e3daa4958876a.jpg">
+                <p class="card_title">Candi Sewu</p>
+            </div>
+            <div class="card_small gambar culture">
+                <img src="https://www.selasar.com/wp-content/uploads/2020/07/rumah-adat-sumatera-utara-karo.jpg">
+                <p class="card_title">Rumah Karo</p>
+            </div>
+            <div class="card_large gambar city">
+                <img src="https://i.pinimg.com/564x/44/6b/1e/446b1e1c0d5d87388e84c83414bd1a51.jpg">
+                <p class="card_title">Jogja</p>
+            </div>
+            <div class="card_medium gambar city">
+                <img src="https://i.pinimg.com/564x/18/94/e2/1894e2b4308f4afeff75c17336ec45e0.jpg">
+                <p class="card_title">Palangkaraya</p>
+            </div>
+            <div class="card_small gambar city">
+                <img src="https://i.pinimg.com/564x/2f/10/72/2f1072092dc7dc3e60429c671c403c97.jpg">
+                <p class="card_title">Makasar</p>
+            </div>
+            <div class="card_medium gambar city">
+                <img src="https://i.pinimg.com/564x/da/ec/85/daec859bc07826bcdfb9d01e5fa4664d.jpg">
+                <p class="card_title">Blitar</p>
+            </div>
+            <div class="card_small gambar city">
+                <img src="https://i.pinimg.com/564x/01/3a/50/013a50be4e8d4a06d21aca4924e2f7e2.jpg">
+                <p class="card_title">Palembang</p>
+            </div>
+            <div class="card_medium gambar food">
+                <img src="https://i.pinimg.com/564x/4c/87/ac/4c87ac7fe9e765def816d132cdaa2799.jpg">
+                <p class="card_title">Es Cendol</p>
+            </div>
+            <div class="card_large gambar food">
+                <img src="https://i.pinimg.com/564x/bb/76/c4/bb76c4af62c88c4ed28c3cb5ab1cc6ca.jpg">
+                <p class="card_title">Kerak Telor</p>
+            </div>
+            <div class="card_medium gambar food">
+                <img src="https://i.pinimg.com/564x/29/e9/9e/29e99ed7d47e4860ee7bfc43072c6afd.jpg">
+                <p class="card_title">Teh Talua</p>
+        </div>            
+    <script src="search.js">
+
+    </script>
+    </body>
+</html>

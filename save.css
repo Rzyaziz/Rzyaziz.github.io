@@ -1,0 +1,429 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+
+body{
+    height: 100vh;
+    background-color: whitesmoke;
+    
+    background-size: cover;
+
+}
+/* START NAVIGATION */
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color:black;
+
+}
+
+a:hover{
+    color:black;
+    padding: 0.4rem 0.9rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    transition: 0.5s;
+    background-color:gainsboro;
+
+}
+
+header{
+    position: relative;
+    padding: 0.2rem;
+}
+
+
+.nav{
+    width: 100%;
+    height: 90px;
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color:transparent;
+    color: black;
+    transition: 0.5s;
+
+}
+
+.nav .logo{
+    border: 40px;
+
+}
+.nav .links{
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+    transition: 0.5s;
+        
+}
+.nav .container .search_box{
+    align-items: center;
+    background-color:gainsboro;
+    height: 55px;
+    width: 800px;
+    display: flex;
+    padding: 3px 5px;
+    border-radius: 40px;
+    transition: 0.5s;
+}
+
+.nav .container .search_box .search_icon{
+    color:gray;
+    cursor: pointer;
+    left: 76%;
+    position:absolute;
+    font-size: 26px;
+}
+
+.nav .container .search_box .search_input .input{
+    background: transparent;
+    border: none;
+    background-color:gainsboro;
+    height: 55px;
+    width: 800px;
+    display: flex;
+    padding: 3px 5px;
+    border-radius: 40px;
+    transition: 0.5s;
+    
+
+}
+.nav .container .search_box .search_input .input:hover{
+    background: transparent;
+    border: none;
+    background-color:gainsboro;
+    height: 55px;
+    width: 810px;
+    display: flex;
+    padding: 3px 5px;
+    border-radius: 40px;
+    transition: 0.5s;
+    
+
+}
+
+.nav .add{
+    font-size:30px;
+    cursor: pointer;
+    display: flex;
+    transition: 0.5s;
+}
+
+.add:hover{
+    border-radius: 50%;
+    padding: 0.4rem;
+    background-color: gainsboro;
+    align-items: center;
+    transition: 0.5s;  
+     
+
+}
+
+.nav .notif{
+    display: flex;
+    cursor: pointer;
+    font-size :30px;
+    transition: 0.5s;
+    
+}
+.notif:hover{
+    
+    border-radius: 50%;
+    padding: 0.4rem;
+    background-color: gainsboro;
+    align-items: center;
+    transition: 0.5s;   
+
+}
+
+.nav .profile .profileteam {
+    cursor: pointer;
+    display: flex;
+    font-size :31px;
+    transition: 0.5s;
+}
+.profile:hover{
+    
+    border-radius: 50%;
+    padding: 0rem;
+    background-color: gainsboro;
+    align-items: center;
+    transition: 0.5s; 
+
+}
+
+.nav .button{
+    font-size:30px;
+    cursor: pointer;
+    display: flex;
+    transition: 0.5s;
+    
+}
+.button:hover{
+    background-color: gainsboro;   
+    border-radius: 15px;
+    padding: 0.4rem;
+
+    align-items: center;
+    transition: 0.5s; 
+}
+.active{    
+    padding: 0.4rem 0.9rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    transition: 0.5s;
+    background-color: gainsboro;
+}
+
+/* START CARD */
+
+.container_card{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    left: 5%;
+    
+    
+    
+}
+   
+.card {
+    margin:10px;
+    padding: 0;
+    border-radius: 15px;
+    width: 560px;
+    height: 300px;
+    background-color: gray;
+
+    display:inline-table;
+    margin-left: 90px;
+    margin-top:40px;
+      
+    
+    
+}
+
+.card1{
+    width:50%;
+    background-color: #007849;
+    height: 100%;
+    border-top-left-radius:15px ;
+    border-bottom-left-radius:15px ;
+    margin: 0;
+    
+    display:inline-flex
+
+}
+.card2{
+    width: 50%;
+    background-color:aquamarine;
+    height: 100%;
+    border-top-right-radius:15px ;
+    border-bottom-right-radius:15px ;
+    display:inline-flex;    
+
+
+}
+
+.card2 .card2_1{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(158, 95, 18);
+    display: inline-block;
+    
+    
+}
+.card2 .card2_1 .card2_1_1{
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    display: inline-flex;
+}
+
+.card2 .card2_2{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(149, 116, 76);
+    display: inline-flexbox;
+    border-top-right-radius:15px ;
+    border-bottom-right-radius:15px ;
+    display:inline-block
+    
+}
+.card2 .card2_2 .card2_2_1{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(54, 158, 47);
+    border-top-right-radius:15px ;
+    border-bottom-right-radius: 15px;
+    display: inline-flex;
+}
+
+
+.card3{
+    width:71%;
+    background-color: #007849;
+    height: 100%;
+    border-top-left-radius:15px ;
+    border-bottom-left-radius:15px ;
+    margin: 0;
+    
+    display:inline-block
+}
+
+.card4 {
+    width: 29%;
+    height:100%;
+    background-color: rgb(149, 116, 76);
+    display: inline-block;
+    border-top-right-radius:15px ;
+    border-bottom-right-radius:15px ;
+}
+.card4 .card4_1{
+    width: 100%;
+    height: 50%;
+    background-color: rgb(54, 158, 47);
+    border-top-right-radius:15px ;
+}
+.card4 .card4_2{
+    width: 100%;
+    height: 50%;
+    background-color: rgb(18, 50, 123);
+    border-bottom-right-radius:15px ;
+}
+
+.card5{
+    width:33.3%;
+    background-color: #007849;
+    height: 100%;
+    border-top-left-radius:15px ;
+    border-bottom-left-radius:15px ;
+    margin: 0;
+    
+    display:inline-block
+}
+.card6{
+    width:33.4%;
+    background-color: #9bbc16;
+    height: 100%;
+    margin: 0;
+    
+    display:inline-block
+}
+.card7{
+    width:33.3%;
+    background-color: #935b24;
+    height: 100%;
+    border-top-right-radius:15px ;
+    border-bottom-right-radius:15px ;
+    margin: 0;
+    
+    display:inline-block
+}
+
+.card8{
+    width:70%;
+    background-color: #007849;
+    height: 116%;
+    border-top-left-radius:15px ;
+    border-bottom-left-radius:15px ;
+    margin: 0;
+    
+    display:inline-block
+}
+
+.card9 {
+    width: 30%;
+    height: 116%;
+    background-color: rgb(149, 116, 76);
+    display: inline-block;
+    border-top-right-radius:15px ;
+    border-bottom-right-radius:15px ;
+}
+
+
+.container_card .card img{
+    width: 100%;
+    height: 100%;
+}
+.card1 img{
+    border-top-left-radius:15px ;
+    border-bottom-left-radius:15px ;
+    margin: 0;
+}
+.card2 .card2_2 img{
+    
+    border-top-right-radius:15px ;
+    border-bottom-right-radius:15px ;
+    display:inline-block
+}
+.card3 img{
+    
+    border-top-left-radius:15px ;
+    border-bottom-left-radius:15px ;
+    margin: 0;  
+    display:inline-block;
+}
+
+.card4 .card4_1 img{
+    width: 100%;
+    height: 50%;
+
+    border-top-right-radius:15px ;
+}
+.card4 .card4_2 img{
+    width: 100%;
+    height: 50%;
+    border-bottom-right-radius:15px ;
+}
+.card5 img{
+    width:33.3%;
+    height: 100%;
+    border-top-left-radius:15px ;
+    border-bottom-left-radius:15px ;
+  
+    
+   
+}
+
+.card7 img{
+    width:33.3%;
+    height: 100%;
+    border-top-right-radius:15px ;
+    border-bottom-right-radius:15px ;
+       
+    display:inline-block
+}
+.card8 img{
+    width:71%;
+    background-color: #007849;
+    height: 100%;
+    border-top-left-radius:15px ;
+    border-bottom-left-radius:15px ;
+    margin: 0;
+    
+    display:inline-flex
+}
+.card9 img{
+    width: 30%;
+    height: 100%;
+        display: inline-block;
+    border-top-right-radius:15px ;
+    border-bottom-right-radius:15px ;
+}
+
+

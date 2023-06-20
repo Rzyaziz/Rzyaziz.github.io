@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-color: whitesmoke;
+    
+    background-size: cover;
+
+}
+/* START NAVIGATION */
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color:black;
+
+}
+
+a:hover{
+    color:black;
+    padding: 0.4rem 0.9rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    transition: 0.5s;
+    background-color:gainsboro;
+
+}
+
+header{
+    position: relative;
+    padding: 0.2rem;
+}
+
+
+.nav{
+    width: 100%;
+    height: 90px;
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color:transparent;
+    color: black;
+    transition: 0.5s;
+
+}
+
+.nav .logo{
+    border: 40px;
+
+}
+.nav .links{
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+    transition: 0.5s;
+        
+}
+.nav .container .search_box{
+    align-items: center;
+    background-color:gainsboro;
+    height: 55px;
+    width: 800px;
+    display: flex;
+    padding: 3px 5px;
+    border-radius: 40px;
+    transition: 0.5s;
+    position: sticky;
+}
+
+.nav .container .search_box .search_icon{
+    color:gray;
+    cursor: pointer;
+    left: 95%;
+    position:absolute;
+    font-size: 26px;
+}
+
+.nav .container .search_box .search_input input{
+    background: transparent;
+    border: none;
+    background-color:gainsboro;
+    height: 55px;
+    width: 800px;
+    display: flex;
+    padding: 3px 5px;
+    border-radius: 40px;
+    transition: 0.5s;
+    
+
+}
+.nav .container .search_box .search_input input:hover{
+    background: transparent;
+    border: none;
+    background-color:gainsboro;
+    height: 55px;
+    width: 810px;
+    display: flex;
+    padding: 3px 5px;
+    border-radius: 40px;
+    transition: 0.5s;
+    
+
+}
+
+.nav .add{
+    font-size:30px;
+    cursor: pointer;
+    display: flex;
+    transition: 0.5s;
+}
+
+.add:hover{
+    border-radius: 50%;
+    padding: 0.4rem;
+    background-color: gainsboro;
+    align-items: center;
+    transition: 0.5s;  
+     
+
+}
+
+.nav .notif{
+    display: flex;
+    cursor: pointer;
+    font-size :30px;
+    transition: 0.5s;
+    
+}
+.notif:hover{
+    
+    border-radius: 50%;
+    padding: 0.4rem;
+    background-color: gainsboro;
+    align-items: center;
+    transition: 0.5s;   
+
+}
+
+.nav .profile .profileteam {
+    cursor: pointer;
+    display: flex;
+    font-size :31px;
+    transition: 0.5s;
+}
+
+.profile:hover{
+    
+    border-radius: 50%;
+    padding: 0rem;
+    background-color: gainsboro;
+    align-items: center;
+    transition: 0.5s; 
+
+}
+
+.nav .button{
+    font-size:30px;
+    cursor: pointer;
+    display: flex;
+    transition: 0.5s;
+    
+}
+.button:hover{
+    background-color: gainsboro;   
+    border-radius: 15px;
+    padding: 0.4rem;
+
+    align-items: center;
+    transition: 0.5s; 
+}
+.active{    
+    padding: 0.4rem 0.9rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    transition: 0.5s;
+    background-color: gainsboro;
+}
+/* START FILTER */
+
+.button_filter {
+    width: 100%;
+    background-color: transparent;
+    margin:10px;
+    gap: 5rem;   
+    display:inline-flex;
+    position:absolute;
+    left:1.5%   
+}
+  
+.button_filter button {
+    display:inline-block;
+    text-align: center;
+    padding: 7px;
+    margin-top: 8px;
+    margin-bottom: 60px;
+    transition: all 0.3s ease;
+    color:gray;
+    font-size: 18px;
+    margin-left: 10px;
+    border: none;
+    background-color: transparent;
+}
+  
+  .button_filter button:hover {
+    color: black;
+    padding: 1rem;
+    border-radius: 15px;
+    background-color:white;
+}
+  
+  .button_filter .filter_active {
+    color: black;
+    padding: 1rem;
+    border-radius: 15px;
+    background-color:white;
+}
+/* START CARD */
+
+:root {
+    --card_width: 292px;
+    --row_increment: 10px;
+    --card_border_radius: 16px;
+    --card_small: 20;
+    --card_medium: 34;
+    --card_large: 50;
+    --card_small_hover: 23;
+    --card_medium_hover: 37;
+    --card_large_hover: 53;
+}
+
+.container_card {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, var(--card_width));
+    grid-auto-rows: var(--row_increment);
+    justify-content:center;
+    top:22%;
+}
+
+.card_title {
+    font-size: medium;
+    opacity: 0;
+    color:aliceblue;
+    position: relative;
+    bottom: 12%;;
+    left: 5%;
+    
+    width: 90%;
+
+}
+.card_title:hover {
+    font-size: medium;
+    opacity: 1;
+    transition: 0.2s;
+}
+
+.card_small {
+    grid-row-end: span var(--card_small);
+    padding: 0;
+    margin: 15px 10px;
+    border-radius: var(--card_border_radius);
+    background-color: gray;
+    
+}
+.card_small:hover{
+    grid-row-end: span var(--card_small_hover);
+    
+}
+.card_medium {
+    grid-row-end: span var(--card_medium);
+    padding: 0;
+    margin: 15px 10px;
+    border-radius: var(--card_border_radius);
+    background-color: grey;
+}
+
+.card_medium:hover{
+    grid-row-end: span var(--card_medium_hover);
+}
+
+.card_large {
+    grid-row-end: span var(--card_large);
+    padding: 0;
+    margin: 15px 10px;
+    border-radius: var(--card_border_radius);
+    background-color: gray;
+}
+
+.card_large:hover{
+    grid-row-end: span var(--card_large_hover);
+}
+
+.container_card .card_small img{
+    width: 100%;
+    height: 100%;
+    border-radius: var(--card_border_radius);
+}
+
+.container_card .card_medium img{
+    width: 100%;
+    height: 100%;
+    border-radius: var(--card_border_radius);
+}
+
+.container_card .card_large img{
+    width: 100%;
+    height: 100%;
+    border-radius: var(--card_border_radius);
+}
+@keyframes fadeIn {
+    	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+.container_card .gambar.hide{
+    display: none;
+}
+.container_card .gambar.show{
+    animation: fadeIn 0.5s ease;
+}
